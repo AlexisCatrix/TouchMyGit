@@ -11,19 +11,34 @@
 
 header {
     border:1px solid red;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
     margin-bottom: 1px;
+    width: 100%;
     height: auto;
-    
+}
+
+#logoheader {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid green;
+    width: 100%;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    border: 1px solid green;
+    list-style: none;
 }
 .imgheader {
-    display: flex;
-    flex-direction: row;
-    max-height: 100%;
-    max-width: 50px;
+    max-height: auto;
+    max-width: 150px;
+    border-radius: 5px;
 }
+
 /*-----------------main---------------------------------------------*/
 main {
     display: flex;
