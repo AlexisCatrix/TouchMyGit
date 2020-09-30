@@ -92,14 +92,18 @@ main {
     border:2px solid yellow;
     margin-bottom: 20px;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
-    margin-left: 70px;
+    padding-left:65px;
     
 
 }
 
-.photos_utilisateurs { /*Doit devenir un :hover pour afficher l'ombre*/
+.photos_utilisateurs:hover { /*Doit devenir un :hover pour afficher l'ombre*/
     box-shadow: 12px 12px 2px 1px rgba(165, 30,30, 0.2);
+    position: relative;
+    top: -5px;
+    transition: box-shadow 0.2s;
 }
 
 
