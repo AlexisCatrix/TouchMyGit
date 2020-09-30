@@ -43,35 +43,42 @@ header {
 main {
     display: flex;
     border:4px solid red;
-    padding-block: 20px;
-    padding-inline: 20px;
-    margin-bottom: 10px;
+
 }
 .mainright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    border:2px solid green;
     padding-block: 20px;
     padding-inline: 20px;
 }
 /*---------------aside------------------------------------------------*/
 #aside {
-    border:2px solid green;
+    background: #0D0E10;
+    color: whitesmoke;
     width: 200px;
-    margin-right: 20px;
-    padding-block: 20px;
     padding-inline: 20px;
 }
 
+
+
 #filtre {
-    border:1px solid blue;
-    margin-bottom: 20px;
+
+    margin: 60px 20px;
 }
+
+.filtre_choix{
+    list-style: none;
+}
+
+.filtre_choix :hover{
+    text-decoration: underline;
+}
+
 #distance {
-    border:1px solid blue;
-    margin-bottom: 20px;
+    margin: 60px 20px;
+
 }
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
@@ -81,33 +88,31 @@ main {
 }
 /*---------------langage-------------------------------------------------*/
 #langagepop {
-    border:1px solid blue;
     margin-bottom: 20px;
     padding-block: 50px;
     padding-inline: 50px;
 }
 #populaire {
-    border:2px solid yellow;
+
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     font-size: 45px;
 }
 #langage {
-    border:2px solid yellow;
+
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
+    margin: 17px;
 }
 /*----------------card--------------------------------------------------*/
 #maincard {
-    border:1px solid blue;
     margin-bottom: 20px;
-    padding-block: 50px;
     padding-inline: 50px;
 }
 #newconnect {
-    border:2px solid yellow;
+
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -115,12 +120,11 @@ main {
 
 }
 #card {
-    border:2px solid yellow;
     margin-bottom: 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
-    padding-left:65px;
+    padding-left:85px;
     
 
 }
@@ -136,7 +140,6 @@ main {
 
 /*----------------------footer---------------------------------------------*/
 #footer {
-    border:4px solid red;
     background-color: black;
     height: 75px;
 
