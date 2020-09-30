@@ -7,11 +7,23 @@
     font-family: 'Roboto Slab', serif;
   
 }
-//*----------------header-------------------------------------------*/
+/*----------------header-------------------------------------------*/
 
 header {
-    border:4px solid red;
-    margin-bottom: 20px;
+    border:1px solid red;
+    list-style: none;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-around;
+    margin-bottom: 1px;
+    height: auto;
+    
+}
+.imgheader {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 50px;
 }
 /*-----------------main---------------------------------------------*/
 main {
@@ -87,19 +99,16 @@ main {
 #footer {
     border:4px solid red;
 }
-
+/*-------------------------------------------------------------------------*/
 .info{
     display: flex;
     justify-content: center;
-    list-style: none;
+  
 }
 
 .info>li {
     margin: 10px;
-}
-
-.tests {
-    color: blue;
+    list-style: none;
 }
 
 .logos_langages {
