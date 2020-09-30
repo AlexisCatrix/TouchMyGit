@@ -12,7 +12,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
     }
 
     button {
@@ -30,11 +29,23 @@
 
     .toastButton {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        height: 30vh;
+        height: 70vh;
     }
 
+    #divLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    #divLogo > img {
+        width : 177px;
+        height: 124px;
+    } 
 
 }
