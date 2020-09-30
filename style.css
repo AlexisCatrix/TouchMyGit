@@ -13,8 +13,7 @@ header {
     border:1px solid red;
     list-style: none;
     display: flex;
-    flex-direction: raw;
-    justify-content: space-around;
+    flex-direction: row;
     margin-bottom: 1px;
     height: auto;
     
