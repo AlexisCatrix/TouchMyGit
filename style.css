@@ -7,26 +7,39 @@
     font-family: 'Roboto Slab', serif;
 }
 /*----------------header-------------------------------------------*/
-
 header {
     width: 100%;
     height: 100px;
-    border:3px solid red;
+    background: #0D0E10;
     display: flex;
     align-items: center;
     text-align: center;
-    padding:5px 2px 2px 2px;
-}
+    padding:5px 5px 5px 5px;
+    margin-bottom: 2px;
+    position: relative;
 
+}
 #navbar {
     width: 100%;
-    border: 4px solid green;
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
     align-items: center;
-    margin-left: 20px;
+    margin-left: 300px;
+    color: white;
 }
+.imgNav:hover{
+    border-radius : 10px;
+    box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
+    position: relative;
+    top: -5px;
+    transition: box-shadow 0.2s;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 /*-----------------main---------------------------------------------*/
 main {
     display: flex;
@@ -69,9 +82,25 @@ main {
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
     border:1px solid blue;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
+    height: 360px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+.legende {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(200, 200, 200, 0.85);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+#carroussel:hover .legende {
+    opacity:1;
+    } 
 /*---------------langage-------------------------------------------------*/
 #langagepop {
     margin-bottom: 20px;
@@ -83,7 +112,7 @@ main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-size: 45px;
+    font-size: 25px;
 }
 #langage {
 
