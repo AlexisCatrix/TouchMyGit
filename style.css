@@ -1,7 +1,92 @@
-header {
-    border-color: black;
+* {
+    box-sizing: border-box;
 }
 
-.tests {
-    color: blue;
+
+header {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+main {
+    display: flex;
+   
+}
+.mainright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#aside {
+    border-color: black;
+    border:1px solid black;
+    width: 200px;
+    margin-bottom: 20px;
+    padding-block: 50px;
+    padding-inline: 50px;
+}
+#filtre {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#distance {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#carroussel {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#aside #carroussel {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+    padding-block: 50px;
+    padding-inline: 50px;
+}
+#langagepop {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+    padding-block: 50px;
+    padding-inline: 50px;
+}
+#populaire {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#langage {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#maincard {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+    padding-block: 50px;
+    padding-inline: 50px;
+}
+#newconnect {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+#card {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+
+#footer {
+    border-color: black;
+    border:1px solid black;
+    margin-bottom: 20px;
 }
