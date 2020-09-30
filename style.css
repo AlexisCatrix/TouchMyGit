@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+  
 }
 
 
@@ -88,8 +94,18 @@ main {
 #footer {
     border-color: black;
     border:1px solid black;
-    margin-bottom: 20px;
 }
+
+.info{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.info>li {
+    margin: 10px;
+}
+
 .tests {
     color: blue;
 }
