@@ -5,3 +5,14 @@ header {
 .tests {
     color: blue;
 }
+
+.logos_langages {
+    width: 222px;
+    height: 143px;
+}
+
+.photos_utilisateurs {
+    height: 259px;
+    width: 347px;
+    border-radius: 17px;
+}
