@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px) and (max-height: 570px)  {
+@media screen and (min-width: 360px) and (max-height: 570px)  {
 
     body {
         margin: 0px;
@@ -6,7 +6,8 @@
 
 
     .container {
-        background-image: url("https://i.ibb.co/f9VnGWX/Image-sub.png");
+        background-image: url("https://i.ibb.co/DCNWVsp/Accueil-1.jpg");
+        background-size: cover; 
         width: 100vw;
         height: 100vh;
         display: flex;
