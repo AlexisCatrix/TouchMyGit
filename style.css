@@ -39,6 +39,10 @@ header {
     top: 0;
     width: 100%
   }
+#logotMG {
+    padding-left: 20px;
+    padding-top: 20px;
+}
 /*-----------------main---------------------------------------------*/
 main {
     display: flex;
@@ -166,7 +170,7 @@ main {
 #aside {
     background: #0D0E10;
     color: whitesmoke;
-    width: 200px;
+    width: 240px;
     padding-inline: 20px;
 }
 
