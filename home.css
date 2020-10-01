@@ -9,12 +9,32 @@
         background-color: black;
     }
 
-    div > img {
-        width: 60px;
-    }
-
     .navBar {
         display: flex;
         justify-content: space-between;
-    }    
+
+    }
+    .navBar > img {
+        width: 60px;
+        padding: 5px;
+    }   
+
+    #caroussel > img {
+        width: 100vw;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        height: 8vh;
+    }
+
+    .dotElements {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(187, 184, 184);
+        margin: 15px;
+    }
+
 }
