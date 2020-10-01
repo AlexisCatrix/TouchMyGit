@@ -39,7 +39,10 @@ header {
     top: 0;
     width: 100%
   }
-  
+#logotMG {
+    padding-left: 20px;
+    padding-top: 20px;
+}
 /*-----------------main---------------------------------------------*/
 main {
     display: flex;
