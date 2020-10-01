@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        color: white;
     }
 
     button {
@@ -47,5 +48,6 @@
         width : 177px;
         height: 124px;
     } 
+
 
 }
