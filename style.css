@@ -55,6 +55,15 @@ main {
 
 /*----------------carrousel------------------------------------------------------------------------------------------------------------*/
 
+.left{
+    position: absolute;
+    left: 1%;
+}
+
+.right{
+    position: absolute;
+    left: 95%;
+}
 /* Conteneur*/
 
 .carroussel{
@@ -62,6 +71,7 @@ main {
     position: relative;
     margin : auto;
 }
+
 
 /*Cacher les images par défaut */
 
@@ -78,9 +88,9 @@ main {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: rgba(165, 30,30, 0.2);
+    color: rgba(231, 211, 211, 0.712);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 40px;
     transition: 0.6s ease;
     border-radius: 0 3 px 3px 0;
     user-select: none;
@@ -88,7 +98,6 @@ main {
 
 
 .next{
-    right: 0;
     border-radius: 3px 0 0 3px;
 }
 
@@ -99,8 +108,8 @@ main {
 
 /*---------------------------------------------Texte------------------------------------------------*/
 .text {
-    color: rgba(143, 231, 212, 0.2);
-    font-size: 15px;
+    color: rgba(248, 248, 248, 0.979);
+    font-size: 60px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -178,47 +187,8 @@ main {
     margin: 60px 20px;
 
 }
-#eventitle {
-    text-align: center;
-}
-.events {
-    list-style: none;
-    
-}
-.events :hover {
-    text-decoration: underline;
-}
-#evenements {
-
-    margin: 60px 20px;
-}
-#puce1 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-#puce2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-#puce3 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-#img_events {
-    margin-right: 10px;
-}
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
-    border:1px solid blue;
     margin-bottom: 10px;
     height: 360px;
     position: relative;
@@ -249,7 +219,7 @@ main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 #langage {
 
@@ -268,7 +238,7 @@ main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-size: 45px
+    font-size: 40px
 
 }
 #card {
