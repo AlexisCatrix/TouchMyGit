@@ -106,12 +106,39 @@
         </aside>
 <!--mainright carroussel---------------------------------------------------------------------------------------------------------------------->
 <div class="mainright">
-    <div id="carroussel">
-        <a href="">
-            <img src="https://via.placeholder.com/1290x350/FFFF00/00000">
-        </a>
-        <div class="legende">voici les evenements majeurs sur Lille</div>
-    </div> <!--Carrousel-->
+    
+    <div id="carroussel"> <!--Carrousel-->
+     
+    <!--------------------------------------IMAGES ET TEXTES --------------------------------------------------------->    
+        <div class="slides_fade fade"> <!--Premier Slide-->
+            <div class="number_text">1 sur 3</div>
+            <img src="https://via.placeholder.com/150" alt="image 1 sur 3">  
+            <div class="text">Text image 2</div>
+        </div>
+
+        <div class="slides_fade fade" ><!--Deuxième Slide-->
+            <div class="number_text">2 sur 3</div>
+            <img src="https://via.placeholder.com/150" alt="image 2 sur 3">  
+            <div class="text">Text image 2</div>
+        </div> 
+
+        <div class="slides_fade fade"> <!--Troisième Slide-->
+            <div class="number_text">3 sur 3</div>
+            <img src="https://via.placeholder.com/150" alt="image 3 sur 3">  
+            <div class="text">Text image 3</div>
+        </div>
+    <!---------------------------------------Boutons suivants et précédents-------------------->    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>        
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!----------------------------------------Cercles----------------------------------------------------->
+    <div style="text-align: center;"> <!--Changer dans le CSS ?-->
+       <span class="dot" onclick=""currentSlid(1)></span>
+       <span class="dot" onclick=""currentSlid(2)></span>
+       <span class="dot" onclick=""currentSlid(3)></span> 
+    </div>
         
 <!--mainright langage------------------------------------------------------------------------------------------------------------------------->
         <section  id="langagepop"> <!--Section "Les plus populaires"-->
