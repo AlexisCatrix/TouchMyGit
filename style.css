@@ -228,7 +228,7 @@ main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
 }
 #img_events {
