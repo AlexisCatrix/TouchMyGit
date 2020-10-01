@@ -10,6 +10,7 @@
       // position du curseur au scroll calculé grâce à la propriété pageYoffset
       // prpriété YOffset retourne la position actuelle du curseur du document courant scrollé à partir du coin haut gauche
       var posCurseur = this.pageYOffset;
+      //le this. se refere à l'objet sur lquel la methodes est appkiqué ici pageYOffest sur fonction sticky
       // je teste la différence de distance entre le scroll et la postion du header
       if(memoPositionHeader-posCurseur<1){
         objHead.style.position = "fixed";
