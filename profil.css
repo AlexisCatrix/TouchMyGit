@@ -133,6 +133,7 @@ main {
     width: 32%;
     height: 105%;
     border-radius: 18px;
+    object-fit: cover;
 }
 
 .card{
