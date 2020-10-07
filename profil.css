@@ -158,15 +158,14 @@ main {
 
 .circle {
     border-radius: 100%;
-    width: 90px;
-    height: 90px;
-
+    width: 8%;
 }
 
 .texte_description{
-    padding-top: 5%;
+    padding-top: 6%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 7%;
     font-size: 133%;
 }
 
@@ -190,7 +189,7 @@ main {
 .intro{
     font-size: 121%;
     font-style: italic;
-    padding-bottom: 9%;
+    padding-bottom: 4%;
 
 }
 
