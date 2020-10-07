@@ -7,27 +7,54 @@
     font-family: 'Roboto Slab', serif;
 }
 /*----------------header-------------------------------------------*/
-header {
+
+header{
     width: 100%;
-    height: 100px;
+    height: 12vh;
     background:black;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     text-align: center;
     padding:5px 5px 5px 5px;
-    position: relative;
     box-shadow: 0 4px 2px 0px rgb(0, 0, 0);
-
+    border: solid;
+    border-color: white;
 }
 #navbar {
-    width: 100%;
+    width: 80%;
+    height: 85px;
+    line-height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
     margin-left: 300px;
     color: white;
+	position: absolute;
+	bottom: 0;
 }
+
+.imgNav{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+}
+
+.imgNav > p {
+    height: fit-content;
+    color:rgb(83, 166, 172)
+}
+
+.imgNav > p:hover {
+    height: fit-content;
+    color:rgb(118, 245, 239)
+}
+
 .imgNav:hover{
     border-radius : 10px;
     box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
@@ -41,8 +68,14 @@ header {
     width: 100%
   }
 #logotMG {
-    padding-left: 20px;
-    padding-top: 20px;
+    display: flex;
+    align-self: center;
+    padding-left: 50px;
+}
+
+#logoHeader {
+    height: 100px;
+    width: 100px;
 }
 /*-----------------main---------------------------------------------*/
 main {
@@ -56,6 +89,7 @@ main {
     width: 100%;
     padding-block: 20px;
     padding-inline: 20px;
+    position: relative;
 }
 
 /*----------------carrousel------------------------------------------------------------------------------------------------------------*/
