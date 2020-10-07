@@ -124,32 +124,35 @@ main {
 
 .descript {
     display: flex;
-    padding-left:  150px;
-    padding-top: 100px;
+    padding-left: 5%;
+    padding-top: 4%;
+
 }
 
 .evamarie {
-    width: 450px;
-    height: 500px;
+    width: 32%;
+    height: 105%;
     border-radius: 18px;
 }
 
 .card{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .description {
-    margin-left: 140px;
+
+    margin-left: 8%;
 }
 
 .list_description {
     list-style: none;
-    padding-top: 20px;
+    padding-top: 3%;
 }
 
 .list_description>li{
-    padding-bottom: 10px;
+    padding-bottom: 5%;
 
 }
 
@@ -161,33 +164,33 @@ main {
 }
 
 .texte_description{
-    padding-top: 30px;
-    padding-left: 150px;
-    padding-right: 50px;
-    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 133%;
 }
 
 .contact{
     background-color: black;
     color: aliceblue;
     position: absolute;
-    margin-left: 116px;
-    height: 60px;
-    width: 208px;
-    margin-top: 24px;
-    font-size: 18px;
+    margin-left: 7%;
+    height: 7%;
+    width: 13%;
+    margin-top: 0%;
+    font-size: 122%;
 }
 
 .name{
-    font-size: 30px;
+    font-size: 193%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 
 .intro{
-    font-size: 20px;
+    font-size: 121%;
     font-style: italic;
-    padding-bottom: 50px;
+    padding-bottom: 9%;
 
 }
 
