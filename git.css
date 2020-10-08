@@ -61,33 +61,33 @@ justify-content: space-around;
 
 .image1{
     position: absolute;
-width: 100px;
-height: 100px;
+width: 28.5%;
+height: 18.5%
 
 }
 .image2{
     position: absolute;
-width: 100px;
-height: 100px;
+    width: 28.5%;
+    height: 18.5%
 
 }
 .image3{
     position: absolute;
-width: 100px;
-height: 100px;
+    width: 28.5%;
+    height: 18.5%
 
 }
 
 .image4{
     position: absolute;
-width: 100px;
-height: 100px;
+    width: 28.5%;
+    height: 18.5%
 
 }
 .image5{
     position: absolute;
-width: 100px;
-height: 100px;
+    width: 28.5%;
+    height: 18.5%
 
 }
 
@@ -386,4 +386,9 @@ top: 32%;
 border-radius: 50%;
 
 
+}
+
+.messen{
+    display: flex;
+    flex-direction: row;
 }
