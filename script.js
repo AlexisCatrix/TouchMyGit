@@ -8,9 +8,8 @@ let headerOpa = document.querySelector('#myHeader');
     }
   });
 
+
   //Carousel//
-
-
 
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -49,4 +48,17 @@ let headerOpa = document.querySelector('#myHeader');
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-  }
+  };
+
+
+  //let header = document.querySelector('header');
+  //header.classlist.toggle(sticky, wwindow.scrolly > 0);
+
+// We create a variable dropdownBtn set to the DOM button node
+const dropdownBtn = document.querySelector("#sidebar-toggle");
+// We create a variable dropDown set to the DOM element
+const dropDown = document.querySelector("#aside");
+// We listen for a click event
+dropdownBtn.addEventListener("click", function() {
+dropDown.classList.toggle("hidden");
+});
