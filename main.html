@@ -49,7 +49,7 @@
     </header>
     <main>
 <!--aside---------------------------------------------------------------------------------------------------------------------------------------->
-        <aside id ="aside"> 
+        <div id="aside"> 
             <!--Barre de tri-->
             <section id="filtre">
                 <div id="puce1">
@@ -104,7 +104,7 @@
                     </ul>        
                 </div>
             </section>
-        </aside>
+        </div>
     <!--mainright carroussel---------------------------------------------------------------------------------------------------------------------->
 <div class="mainright">
     
@@ -135,12 +135,14 @@
     <br>
 
     <!----------------------------------------Cercles----------------------------------------------------->
-    <div style="text-align: center;"> <!--Changer dans le CSS ?-->
+    <div id="dots" style="text-align: center;"> <!--Changer dans le CSS ?-->
        <span class="dot" onclick="currentSlide(1)"></span>
        <span class="dot" onclick="currentSlide(2)"></span>
        <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-<!--mainright langage------------------------------------------------------------------------------------------------------------------------->
+
+        <div id='filter'><span>Filtrer</span></div>
+        <!--mainright langage------------------------------------------------------------------------------------------------------------------------->
         <section  id="langagepop"> <!--Section "Les plus populaires"-->  
             <img id="sidebar-toggle" src="https://i.ibb.co/7Q7n7Jh/fl-che-button.png">
             <h2 id="populaire">Les plus populaires</h2>
