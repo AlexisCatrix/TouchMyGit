@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-@keyframes opacity-downTranslate {
-    0% {opacity: 1;}
-    100% {opacity: 0.5;}
-}
-
-@keyframes opacity-upTranslate {
-    0% {opacity: 0.5;}
-    100% {opacity: 1;}
-}
-
-@keyframes arrowRotation {
-    from {transform: rotate(0deg);}
-} 
-    to {transform: rotate(180deg);}
 * {
 
     
@@ -23,87 +9,7 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
-/*----------------header-------------------------------------------*/
 
-header{
-    width: 100vw;
-    height: 12vh;
-    background:black;
-    top: 0px;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1 ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding:5px 5px 5px 5px;
-    box-shadow: 0 4px 2px 0px rgb(0, 0, 0);
-    border: solid;
-    border-color: white;
-    animation-name: opacity-upTranslate;
-    animation-duration: 0.4s;
-    opacity: 1;
-}
-
-.headerDownAnima {
-    animation-name: opacity-downTranslate;
-    animation-duration: 0.4s;
-    opacity: 0.5;
-}
-
-#navbar {
-    width: 80%;
-    height: 85px;
-    line-height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 300px;
-    color: white;
-	position: absolute;
-	bottom: 0;
-}
-
-.imgNav{
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-    height: 40px;
-}
-
-.imgNav > p {
-    height: fit-content;
-    color:rgb(83, 166, 172)
-}
-
-.imgNav > p:hover {
-    height: fit-content;
-    color:rgb(118, 245, 239)
-}
-
-.imgNav:hover{
-    border-radius : 10px;
-    box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
-    position: relative;
-    top: -5px;
-    transition: box-shadow 0.2s;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-#logotMG {
-    display: flex;
-    align-self: center;
-    padding-left: 50px;
-}
-
-#logoHeader {
-    height: 100px;
-    width: 100px;
-}
 /*-----------------main---------------------------------------------*/
 main {
     display: flex;
@@ -244,87 +150,6 @@ main {
     from {opacity: .4}
     to {opacity: 1}
   }
-
-/*---------------aside------------------------------------------------*/
-#aside {
-    background:rgb(0, 0, 0);
-    color: whitesmoke;
-    width: 240px;
-    margin-top: 10vh;
-    box-shadow: 4px 0px 2px 0px rgb(0, 0, 0);
-}
-
-.hiddenAside {
-    display: none;
-}
-
-#filtre {
-
-    margin: 60px 20px;
-}
-
-.filtre_choix{
-    list-style: none;
-}
-
-.filtre_choix :hover{
-    text-decoration: underline;
-}
-
-#distance {
-    margin: 60px 20px;
-
-}
-#eventitle {
-    text-align: center;
-}
-.events {
-    list-style: none;
-    
-}
-.events :hover {
-    text-decoration: underline;
-}
-#evenements {
-
-    margin: 60px 20px;
-}
-#puce1 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-#puce2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-#puce3 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-#img_events {
-    margin-right: 10px;
-}
-
-.rotateArrow {
-    animation-name: arrowRotation;
-    animation-duration: 0.6s;
-    transform: rotate(180deg);
-}
-
-.rotateArrowInverse{
-    animation-name: arrowRotation;
-    animation-duration: 0.6s;
-    transform: rotate(90deg);
-}
 
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
