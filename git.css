@@ -110,33 +110,62 @@ height: 100px;
 
 .person1 {
 
-    width: 100px;
+    width:100px;
     height: 100px;
+    background-color: lightgray; 
+  
+
 }
 
+
 .person2 {
- 
+    
 width: 100px;
 height: 100px;
+background-color: lightgray; 
+
+
+
 }
+
 
 .person3 {
 
 width: 100px;
 height: 100px;
+background-color: lightgray; 
+
+
 }
+
 
 .person4 {
  
 width: 100px;
 height: 100px;
+background-color: lightgray; 
+
+
 }
+
 
 .person5 {
 
 width: 100px;
 height: 100px;
+background-color: lightgray; 
+
+
 }
+
+.person6 {
+
+    width: 100px;
+    height: 100px;
+    background-color: lightgray; 
+    
+    
+    }
 
 /*-----------------rectangle1---------------------------------------------*/
 
@@ -301,13 +330,11 @@ border-radius: 15%;
 
 .entremess{
     position: absolute;
-left: 15%;
+left: 25%;
 right: 44.83%;
 top: 94.7%;
 bottom: 1.39%;  
 width: 50%;
-
-background: #DBDBDB;
 border-radius: 133px;
 }
 
@@ -318,6 +345,45 @@ left: 63.26%;
 right: 25.67%;
 top: 94.15%;
 bottom: 0.65%;
-background-color: gray;
 border-radius: 133px;
+}
+
+.tetemess{
+
+    position: absolute;
+    left: 25%;
+    right: 30%;
+    top: 32%;
+    bottom: 57.8%;
+    border-radius: 133px 133px 0% 0% ;
+
+background: lightgray;
+}
+
+.norma{
+
+    position: absolute;
+    left: 27.39%;
+    right: 25.67%;
+    top: 30.4%;
+    bottom: 77.63%;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000; 
+}
+
+.petitlogo{
+
+position: absolute;
+width: 89px;
+height: 77px;
+left: 38%;
+top: 32%;
+border-radius: 50%;
+
+
 }
