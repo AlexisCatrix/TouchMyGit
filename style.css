@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+@keyframes opacity-downTranslate {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+@keyframes opacity-upTranslate {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes arrowRotation {
+    from {transform: rotate(0deg);}
+} 
+    to {transform: rotate(180deg);}
+* {
+
+    
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+/*----------------header-------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 12vh;
+    background:black;
+    top: 0px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1 ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:5px 5px 5px 5px;
+    box-shadow: 0 4px 2px 0px rgb(0, 0, 0);
+    border: solid;
+    border-color: white;
+    animation-name: opacity-upTranslate;
+    animation-duration: 0.6s;
+    opacity: 1;
+}
+
+.headerDownAnima {
+    animation-name: opacity-downTranslate;
+    animation-duration: 0.6s;
+    opacity: 0.5;
+}
+
+#navbar {
+    width: 80%;
+    height: 85px;
+    line-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 300px;
+    color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+.imgNav{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+}
+
+.imgNav > p {
+    height: fit-content;
+    color:rgb(83, 166, 172)
+}
+
+.imgNav > p:hover {
+    height: fit-content;
+    color:rgb(118, 245, 239)
+}
+
+.imgNav:hover{
+    border-radius : 10px;
+    box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
+    position: relative;
+    top: -5px;
+    transition: box-shadow 0.2s;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+#logotMG {
+    display: flex;
+    align-self: center;
+    padding-left: 50px;
+}
+
+#logoHeader {
+    height: 100px;
+    width: 100px;
+}
+/*-----------------main---------------------------------------------*/
+main {
+    display: flex;
+
+}
+.mainright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 20px;
+    position: relative;
+}
+
+/*----------------carrousel------------------------------------------------------------------------------------------------------------*/
+.img_carou{
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    position: absolute;
+    left: 1%;
+}
+
+.right{
+    position: absolute;
+    left: 95%;
+}
+/* Conteneur*/
+
+.carroussel{
+    max-width: 1000px;
+    position: relative;
+    margin : auto;
+}
+
+
+/*Cacher les images par défaut */
+
+.slides_fade{
+    display: none;
+}
+
+/*-------------------------------------------------- Boutons suivants et précédents ----------------------------------------------*/
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgba(12, 2, 2, 0.712);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3 px 3px 0;
+    user-select: none;
+}
+
+
+.next{
+    border-radius: 3px 0 0 3px;
+}
+
+/* Ajouter un fond noir hover sur les fléches*/
+.prev:hover, .next:hover {
+    background-color: rgba(10, 51, 51, 0.2);
+}
+
+/*---------------------------------------------Texte------------------------------------------------*/
+.text {
+    color: rgba(248, 248, 248, 0.979);
+    font-size: 60px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    height: 55%;
+    text-align: center;
+}
+
+/*----------------------------Numéro du texte (1 sur 2, 2 sur 3, 3 sur 3)-------------------------------*/
+.number_text {
+    color: rgba(143, 231, 212, 0.2);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*------------------Indicateur sur les cercles---------------------------*/
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2 px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: royalblue;
+}
+
+/*-------------------------------Animation du fondu------------------------------*/
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*---------------aside------------------------------------------------*/
+#aside {
+    background:rgb(92, 84, 84);
+    color: whitesmoke;
+    width: 240px;
+    margin-top: 10vh;
+    box-shadow: 4px 0px 2px 0px rgb(0, 0, 0);
+}
+
+
+#filtre {
+
+    margin: 60px 20px;
+}
+
+.filtre_choix{
+    list-style: none;
+}
+
+.filtre_choix :hover{
+    text-decoration: underline;
+}
+
+#distance {
+    margin: 60px 20px;
+
+}
+#eventitle {
+    text-align: center;
+}
+.events {
+    list-style: none;
+    
+}
+.events :hover {
+    text-decoration: underline;
+}
+#evenements {
+
+    margin: 60px 20px;
+}
+#puce1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#puce2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#puce3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#img_events {
+    margin-right: 10px;
+}
+.hidden {
+    display: none;
+}
+
+.rotateArrow {
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(180deg);
+}
+
+.rotateArrowInverse{
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(90deg);
+}
+
+/*----------------carroussel--------------------------------------------*/
+#carroussel {
+    margin-bottom: 10px;
+    height: 360px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.legende {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(200, 200, 200, 0.85);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+#carroussel:hover .legende {
+    opacity:1;
+    } 
+/*---------------langage-------------------------------------------------*/
+#langagepop {
+    margin-bottom: 0px;
+    display: grid; 
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 20px;
+}
+#langage {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#populaire {
+
+    margin-bottom: 20px;
+    margin-right: 350px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#langage {
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 17px;
+}
+#sidebar-toggle {
+    display : inline-block;
+    width: 80px;
+    padding: 20px;
+}
+/*----------------card--------------------------------------------------*/
+#maincard {
+    margin-bottom: 20px;
+    padding-inline: 50px;
+    text-align: center;
+}
+#newconnect {
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px
+
+}
+#card {
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left:15px;
+    
+
+}
+
+.photos_utilisateurs:hover { /*Doit devenir un :hover pour afficher l'ombre*/
+    box-shadow: 12px 12px 2px 1px rgba(165, 30,30, 0.2);
+    position: relative;
+    top: -5px;
+    transition: box-shadow 0.2s;
+}
+
+
+
+/*----------------------footer---------------------------------------------*/
+#footer {
+    background-color: black;
+    height: 75px;
+
+}
+
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: blanchedalmond;
+    padding: 13px;
+    
+}
+
+.info>li {
+    margin: 10px;
+    padding-left: 66px;
+
+}
+
+.tests {
+    color: blue;
+}
+
+.logos_langages {
+    width: 222px;
+    height: 143px;
+}
+
+.photos_utilisateurs {
+    height: 259px;
+    width: 347px;
+    border-radius: 17px;
+}
