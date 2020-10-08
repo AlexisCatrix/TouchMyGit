@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -10,10 +10,16 @@ header {
     align-items: center;
     text-align: center;
     padding:5px 5px 5px 5px;
-    position: relative;
+    
     box-shadow: 0 4px 2px 0px rgb(0, 0, 0);
 
 }
+
+#containerProfil {
+    display: flex;
+
+}
+
 #navbar {
     width: 100%;
     display: flex;
@@ -26,7 +32,7 @@ header {
 .imgNav:hover{
     border-radius : 10px;
     box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
-    position: relative;
+    
     top: -5px;
     transition: box-shadow 0.2s;
 }
@@ -42,61 +48,50 @@ header {
 }
 /*-----------------main---------------------------------------------*/
 
-.cotéUn {
-    position: absolute;
-left: 00%;
-right: 75%;
-top: 25%;
-bottom: 0%;
-
+.profilMess {
+    
+width: 25vw;
 background: black;
 border: black;
 box-sizing: border-box;
 color: blue;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-
+margin: 0px;
 }
 
 .image1{
-    position: absolute;
+    
 width: 100px;
 height: 100px;
 
 }
 .image2{
-    position: absolute;
+    
 width: 100px;
 height: 100px;
 
 }
 .image3{
-    position: absolute;
+    
 width: 100px;
 height: 100px;
 
 }
 
 .image4{
-    position: absolute;
+    
 width: 100px;
 height: 100px;
 
 }
 .image5{
-    position: absolute;
+    
 width: 100px;
 height: 100px;
 
 }
 
-.cotéDeux{
-    position: absolute;
-    left: 7%;
-    right: 75%;
-    top: 32.5%;
-    bottom: -6%;
+.messagerieScreen{
+    
     
     background-color: black;
     border: black;
@@ -113,7 +108,6 @@ height: 100px;
     width:100px;
     height: 100px;
     background-color: lightgray; 
-  
 
 }
 
@@ -171,7 +165,7 @@ background-color: lightgray;
 
 
 .milieu {
-    position: absolute;
+    
 width: 600px;
 height: 550px;
 left: 300px;
@@ -184,7 +178,7 @@ background-color: black;
 /*-----------------milieu------------------------------------------*/
 
 .présentation{
-    position: absolute;
+    
     height: 550px;
     left: 150vh;  
     top: 247px;
@@ -199,7 +193,7 @@ height: 33vh;
 
 .présdeux{
 
-    position: absolute;
+    
     width: 42vh;
     left: 150vh;
     top: 65vh;
@@ -319,7 +313,7 @@ text-align: center;
 
 .boxmilieu{
 
-position: absolute;
+
 left: 25%;
 right: 30%;
 top: 32%;
@@ -329,7 +323,7 @@ border-radius: 15%;
 }
 
 .entremess{
-    position: absolute;
+    
 left: 25%;
 right: 44.83%;
 top: 94.7%;
@@ -340,7 +334,7 @@ border-radius: 133px;
 
 .send{
 
-position: absolute;
+
 left: 63.26%;
 right: 25.67%;
 top: 94.15%;
@@ -350,7 +344,7 @@ border-radius: 133px;
 
 .tetemess{
 
-    position: absolute;
+    
     left: 25%;
     right: 30%;
     top: 32%;
@@ -362,7 +356,7 @@ background: lightgray;
 
 .norma{
 
-    position: absolute;
+    
     left: 27.39%;
     right: 25.67%;
     top: 30.4%;
@@ -378,7 +372,7 @@ background: lightgray;
 
 .petitlogo{
 
-position: absolute;
+
 width: 89px;
 height: 77px;
 left: 38%;
