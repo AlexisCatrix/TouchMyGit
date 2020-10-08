@@ -112,7 +112,7 @@ height: 100px;
 
     width:100px;
     height: 100px;
-    background-color: lightgray; 
+    background-color: darkgray; 
   
 
 }
@@ -122,8 +122,7 @@ height: 100px;
     
 width: 100px;
 height: 100px;
-background-color: lightgray; 
-
+background-color: darkgray;
 
 
 }
@@ -133,7 +132,7 @@ background-color: lightgray;
 
 width: 100px;
 height: 100px;
-background-color: lightgray; 
+background-color: darkgray;
 
 
 }
@@ -143,7 +142,7 @@ background-color: lightgray;
  
 width: 100px;
 height: 100px;
-background-color: lightgray; 
+background-color: darkgray;
 
 
 }
@@ -153,7 +152,7 @@ background-color: lightgray;
 
 width: 100px;
 height: 100px;
-background-color: lightgray; 
+background-color: darkgray;
 
 
 }
@@ -162,7 +161,7 @@ background-color: lightgray;
 
     width: 100px;
     height: 100px;
-    background-color: lightgray; 
+    background-color: darkgray;
     
     
     }
@@ -386,4 +385,26 @@ top: 32%;
 border-radius: 50%;
 
 
+
 }
+
+#footer {
+    background-color: black;
+    height: 75px;
+
+}
+.info{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: blanchedalmond;
+    padding: 13px;
+    
+}
+
+.info>li {
+    margin: 10px;
+    padding-left: 66px;
+
+}
+
