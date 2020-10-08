@@ -179,7 +179,6 @@ main {
     width: 240px;
     padding-inline: 20px;
     box-shadow: 4px 0px 2px 0px rgb(0, 0, 0);
-
 }
 
 #filtre {
@@ -237,6 +236,10 @@ main {
 #img_events {
     margin-right: 10px;
 }
+.hidden {
+    display: none;
+}
+
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
     margin-bottom: 10px;
@@ -260,16 +263,28 @@ main {
     } 
 /*---------------langage-------------------------------------------------*/
 #langagepop {
-    margin-bottom: 20px;
-    padding-block: 50px;
-    padding-inline: 50px;
+    margin-bottom: 0px;
+    padding-block: 30px;
+    padding-inline: 0px;
+    display: grid; 
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 20px;
 }
+#langage {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 #populaire {
 
     margin-bottom: 20px;
+    margin-right: 350px;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 #langage {
 
@@ -277,6 +292,16 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 17px;
+}
+#sidebar-toggle {
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 20px solid transparent;
+    border-bottom : 20px solid transparent;
+    border-left : 50px solid black;
+    border-right: 0px transparent;
+    background-color: white;
 }
 /*----------------card--------------------------------------------------*/
 #maincard {
