@@ -1,0 +1,67 @@
+@media screen and (min-width: 895px) {
+    body {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .navBar {
+        display: none;
+
+    }
+    .navBar > img {
+        display: none;
+    }   
+
+    #aside {
+        display: none;
+    }
+    
+    #caroussel > img {
+        display: none;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .dotElements {
+        display: none;
+
+    }
+
+    .dotElements:hover {
+        display: none;
+
+    }
+
+    #displayDelimitBar {
+        display: none;
+    }
+
+    #delimitBar {
+        display: none;
+
+    }
+
+    #galleryProfils {
+        display: none;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+
+    #galleryProfils > img {
+        display: none;
+    }
+
+}
+

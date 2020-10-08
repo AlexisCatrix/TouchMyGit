@@ -5,20 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page - Touch My Git (version mobile)</title>
-    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link rel="stylesheet" type="text/css" href="./homeMobile.css">
+    <link rel="stylesheet" type="text/css" href="./displayNone_home(MQ).css">
+
+
 </head>
 
 <body>
     <header>
         <div class="navBar">
-            <img src="https://i.ibb.co/5sMZ9VK/menu-burger.jpg" alt="menu-burger">
-            <img src="https://i.ibb.co/ByYC1n0/logo-tmg-90x90.jpg" alt="logoTmg">
-            <img src="https://i.ibb.co/hRKnmnG/notif.jpg" alt="notification">
+            <img id="burgerMenu" src="https://i.ibb.co/5sMZ9VK/menu-burger.jpg" alt="menu-burger">
+            <img id="home " src="https://i.ibb.co/ByYC1n0/logo-tmg-90x90.jpg" alt="logoTmg">
+            <img id="bell" src="https://i.ibb.co/hRKnmnG/notif.jpg" alt="notification">
+        </div>
+        <span id="textCarou">Les nouvelles conférences près de chez vous !</span>
+        <div id="asideHidden">
+            <ul>
+                <li>Langages</li>
+                <li>Localisation</li>
+                <li>Events</li>
+                <li>Réseau</li>
+                <li>Messages</li>
+            </ul>
         </div>
     </header>
     <div id="caroussel">
         <img src="https://i.ibb.co/vqWj7zT/pexels-luis-quintero-2774556.jpg">
     </div>
+
     <div class="dots">
         <div class="dotElements"></div>
         <div class="dotElements"></div>
@@ -27,13 +41,13 @@
     <div id="displayDelimitBar">
         <div id="delimitBar"></div>
     </div>
-    <h1>Les nouveaux arrivants</h1>
+    <h1>Les nouveaux connectés</h1>
     <div id="galleryProfils">
         <img src="https://i.ibb.co/LQkY6Xf/woman-1439909-1920.jpg" alt="Norma">
         <img src="https://i.ibb.co/3CkWHst/woman-1149911-1920.jpg" alt="Evamarie">
         <span>Norma<br>
             "Des conseils pour<br>
-             débuter ?</span>
+            débuter ?</span>
         <span>Evamarie<br>
             "Envie d'apprendre<br>
             ..."</span>
@@ -46,7 +60,7 @@
             "Wild breakfast ?<br>
             ..."</span>
     </div>
-
+    <script src="mobile.js"></script>
 </body>
 
 </html>
