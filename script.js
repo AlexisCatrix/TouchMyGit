@@ -60,8 +60,9 @@ const dropdownBtn = document.querySelector("#sidebar-toggle");
 const dropDown = document.querySelector("#aside");
 // We listen for a click event
 dropdownBtn.addEventListener("click", function() {
-  dropDown.classList.toggle("hidden");
   dropdownBtn.classList.toggle('rotateArrow');
+  dropDown.classList.toggle("hiddenAside");
+  
 
 });
 
