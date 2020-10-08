@@ -1,12 +1,11 @@
+let headerOpa = document.querySelector('#myHeader');
 
-
-
-let  headerOpa = document.querySelector('#myHeader');
-
-document.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 0) {
-      headerOpa.style.opacity = 0.5;
-      }
+  document.addEventListener('scroll', () => {
+    if (window.scrollY > 0){
+    headerOpa.classList.add('headerDownAnima');
+    } else if (window.scrollY <= 0){
+    headerOpa.classList.remove('headerDownAnima');
+    }
   });
 
   //Carousel//
