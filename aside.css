@@ -1,0 +1,79 @@
+#aside {
+    background:rgb(0, 0, 0);
+    color: whitesmoke;
+    width: 240px;
+    padding-top: 15vh;
+    box-shadow: 4px 0px 2px 0px rgb(0, 0, 0);
+}
+
+.hiddenAside {
+    display: none;
+}
+
+#filtre {
+
+    margin: 60px 20px;
+}
+
+.filtre_choix{
+    list-style: none;
+}
+
+.filtre_choix :hover{
+    text-decoration: underline;
+}
+
+#distance {
+    margin: 60px 20px;
+
+}
+#eventitle {
+    text-align: center;
+}
+.events {
+    list-style: none;
+    
+}
+.events :hover {
+    text-decoration: underline;
+}
+#evenements {
+
+    margin: 60px 20px;
+}
+#puce1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#puce2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#puce3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#img_events {
+    margin-right: 10px;
+}
+
+.rotateArrow {
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(180deg);
+}
+
+.rotateArrowInverse{
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(90deg);
+}
