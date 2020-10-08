@@ -1,33 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
+@keyframes opacity-downTranslate {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+@keyframes opacity-upTranslate {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes arrowRotation {
+    from {transform: rotate(0deg);}
+} 
+    to {transform: rotate(180deg);}
 * {
+
+    
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
 /*----------------header-------------------------------------------*/
-header {
-    width: 100%;
-    height: 100px;
+
+header{
+    width: 100vw;
+    height: 12vh;
     background:black;
+    top: 0px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1 ;
     display: flex;
     align-items: center;
     text-align: center;
     padding:5px 5px 5px 5px;
-    position: relative;
     box-shadow: 0 4px 2px 0px rgb(0, 0, 0);
-
+    border: solid;
+    border-color: white;
+    animation-name: opacity-upTranslate;
+    animation-duration: 0.4s;
+    opacity: 1;
 }
+
+.headerDownAnima {
+    animation-name: opacity-downTranslate;
+    animation-duration: 0.4s;
+    opacity: 0.5;
+}
+
 #navbar {
-    width: 100%;
+    width: 80%;
+    height: 85px;
+    line-height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
     margin-left: 300px;
     color: white;
+	position: absolute;
+	bottom: 0;
 }
+
+.imgNav{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+}
+
+.imgNav > p {
+    height: fit-content;
+    color:rgb(83, 166, 172)
+}
+
+.imgNav > p:hover {
+    height: fit-content;
+    color:rgb(118, 245, 239)
+}
+
 .imgNav:hover{
     border-radius : 10px;
     box-shadow: 12px 12px 2px 1px rgba(252, 252, 252, 0.2);
@@ -41,8 +95,14 @@ header {
     width: 100%
   }
 #logotMG {
-    padding-left: 20px;
-    padding-top: 20px;
+    display: flex;
+    align-self: center;
+    padding-left: 50px;
+}
+
+#logoHeader {
+    height: 100px;
+    width: 100px;
 }
 /*-----------------main---------------------------------------------*/
 main {
@@ -54,8 +114,13 @@ main {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-block: 20px;
-    padding-inline: 20px;
+
+    position: relative;
+}
+
+#filter {
+    height: 15px;
+    padding-left: 10px;
 }
 
 /*----------------carrousel------------------------------------------------------------------------------------------------------------*/
@@ -73,6 +138,10 @@ main {
     position: absolute;
     left: 95%;
 }
+
+#dots {
+    padding: 10px 0px;
+}
 /* Conteneur*/
 
 .carroussel{
@@ -86,6 +155,7 @@ main {
 
 .slides_fade{
     display: none;
+    position: relative;
 }
 
 /*-------------------------------------------------- Boutons suivants et précédents ----------------------------------------------*/
@@ -123,8 +193,11 @@ main {
     position: absolute;
     bottom: 8px;
     width: 100%;
-    height: 55%;
+    height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*----------------------------Numéro du texte (1 sur 2, 2 sur 3, 3 sur 3)-------------------------------*/
@@ -174,12 +247,15 @@ main {
 
 /*---------------aside------------------------------------------------*/
 #aside {
-    background:black;
+    background:rgb(0, 0, 0);
     color: whitesmoke;
     width: 240px;
-    padding-inline: 20px;
+    margin-top: 10vh;
     box-shadow: 4px 0px 2px 0px rgb(0, 0, 0);
+}
 
+.hiddenAside {
+    display: none;
 }
 
 #filtre {
@@ -237,15 +313,29 @@ main {
 #img_events {
     margin-right: 10px;
 }
+
+.rotateArrow {
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(180deg);
+}
+
+.rotateArrowInverse{
+    animation-name: arrowRotation;
+    animation-duration: 0.6s;
+    transform: rotate(90deg);
+}
+
 /*----------------carroussel--------------------------------------------*/
 #carroussel {
     margin-bottom: 10px;
-    height: 360px;
+    height: 260px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 .legende {
     position: absolute;
@@ -260,16 +350,26 @@ main {
     } 
 /*---------------langage-------------------------------------------------*/
 #langagepop {
-    margin-bottom: 20px;
-    padding-block: 50px;
-    padding-inline: 50px;
+    margin-bottom: 0px;
+    display: grid; 
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 20px;
 }
+#langage {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 #populaire {
 
     margin-bottom: 20px;
+    margin-right: 350px;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 #langage {
 
@@ -277,6 +377,10 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 17px;
+}
+#sidebar-toggle {
+    width: 60px;
+    padding: 10px;
 }
 /*----------------card--------------------------------------------------*/
 #maincard {
